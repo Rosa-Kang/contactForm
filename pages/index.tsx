@@ -74,7 +74,7 @@ export default function Home() {
             </div>
             
             <div className="mt-6 pt-6 border-t">
-              <h3 className="font-semibold mb-3">What You&apos;ll Learn:</h3>
+              <h3 className="font-semibold mb-3">What You will Learn:</h3>
               <div className="grid md:grid-cols-2 gap-4 text-sm text-left">
                 <ul className="space-y-1 text-gray-700">
                   <li>• TypeScript interface definitions</li>
