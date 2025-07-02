@@ -6,9 +6,8 @@ if(!process.env.MONGODB_URI) {
 
 const uri = process.env.MONGODB_URI;
 
-// MongoDB 연결 옵션 명시적으로 설정
+// Explicitly configure SSL/TLS settings
 const options: MongoClientOptions = {
-    // SSL/TLS 설정을 명시적으로 지정
     tls: true,
     tlsAllowInvalidCertificates: false,
     tlsAllowInvalidHostnames: false,

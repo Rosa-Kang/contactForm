@@ -51,7 +51,7 @@ const Contact = () => {
     };
 
     return (
-        <div>
+        <div className="flex flex-col justify-center items-center min-h-screen">
             <Head>
                 <title>Contact Us</title>
                 <meta name="description" content="Contact Form with Next.js and MongoDB" />

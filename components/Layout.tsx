@@ -11,10 +11,11 @@ const Layout = ({children}: LayoutProps) => {
   return (
     <div>
         <Navigation />
-
-        <main className="container mx-auto">
+        <div className="min-h-screen flex flex-col">
+        <main className="flex-1">
             {children}
         </main>
+        </div>
 
         <Footer />
     </div>
