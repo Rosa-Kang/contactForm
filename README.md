@@ -6,6 +6,29 @@ A modern contact form application built with Next.js, TypeScript, and MongoDB, d
 
 This application serves as a comprehensive example of building a production-ready contact form system using modern web technologies. It demonstrates type-safe development, database integration, API design, and responsive UI implementation.
 
+## 📁 Project Structure
+
+```
+contact-form-app/
+├── components/
+│   ├── Layout.tsx
+│   ├── Navigation.tsx
+│   └── Footer.tsx
+├── pages/
+│   ├── api/
+│   │   └── contact.ts      # Contact form API endpoint
+│   ├── _app.tsx
+│   ├── index.tsx
+│   ├── contact.tsx
+│   └── messages.tsx        # Server-side rendered messages page
+├── lib/
+│   └── mongodb.ts          # Database connection singleton
+├── types/
+│   └── index.ts            # TypeScript interfaces
+└── styles/
+    └── globals.css
+```
+
 ## ✨ Features
 
 ### Core Functionality
@@ -161,62 +184,6 @@ export const getServerSideProps = async () => {
 - React hooks for local state
 - Form state management
 - Loading and error states
-
-## 📁 Project Structure
-
-```
-contact-form-app/
-├── components/
-│   ├── Layout.tsx
-│   ├── Navigation.tsx
-│   └── Footer.tsx
-├── pages/
-│   ├── api/
-│   │   └── contact.ts      # Contact form API endpoint
-│   ├── _app.tsx
-│   ├── index.tsx
-│   ├── contact.tsx
-│   └── messages.tsx        # Server-side rendered messages page
-├── lib/
-│   └── mongodb.ts          # Database connection singleton
-├── types/
-│   └── index.ts            # TypeScript interfaces
-└── styles/
-    └── globals.css
-```
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js 18+
-- MongoDB Atlas account or local MongoDB instance
-
-### Installation
-
-1. **Clone the repository**
-```bash
-git clone <repository-url>
-cd contact-form-app
-```
-
-2. **Install dependencies**
-```bash
-npm install
-```
-
-3. **Environment Setup**
-Create `.env.local` file:
-```env
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/contact_db
-```
-
-4. **Run development server**
-```bash
-npm run dev
-```
-
-5. **Open application**
-Navigate to `http://localhost:3000`
 
 ## 🧪 API Endpoints
 
